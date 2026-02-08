@@ -1,4 +1,6 @@
 
+<div align="center">
+
 # 🧠✨ LinguistAI ✨🧠
 
 🚀 *AI Text Intelligence untuk analisis & pengolahan bahasa*  
