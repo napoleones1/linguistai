@@ -47,7 +47,7 @@ Seluruh fitur LinguistAI ditenagai oleh **Gemini AI** sebagai otak kecerdasan bu
 ## 🔗 Live Demo
 
 🎯 Jalankan aplikasi langsung di:  
-👉 https://linguistai-snowy.vercel.app/
+👉 https://linguistai-iota.vercel.app/
 
 ---
 
