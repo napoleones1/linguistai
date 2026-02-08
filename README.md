@@ -7,9 +7,9 @@
 🤖 Dibangun dengan Node.js + Gemini AI  
 🌐 Siap dijalankan & dikembangkan
 
-![GitHub stars](https://img.shields.io/github/stars/username/linguistai?style=social)
-![GitHub forks](https://img.shields.io/github/forks/username/linguistai?style=social)
-![GitHub license](https://img.shields.io/github/license/username/linguistai)
+![GitHub stars](https://img.shields.io/github/stars/napoleones1/linguistai?style=social)
+![GitHub forks](https://img.shields.io/github/forks/napoleones1/linguistai?style=social)
+![GitHub license](https://img.shields.io/github/license/napoleones1/linguistai)
 
 </div>
 
