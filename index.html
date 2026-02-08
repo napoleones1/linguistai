@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="id" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" />
+    <title>LinguistAI - Elite Text Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+            },
+            animation: {
+              'bounce-slow': 'bounce 3s infinite',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+        body { 
+          font-family: 'Plus Jakarta Sans', sans-serif; 
+          transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        .bg-mesh {
+          background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,0.03) 0, transparent 50%), 
+                            radial-gradient(at 100% 0%, hsla(225,39%,30%,0.03) 0, transparent 50%);
+        }
+        .dark .bg-mesh {
+          background-image: radial-gradient(at 0% 0%, hsla(253,16%,70%,0.02) 0, transparent 50%), 
+                            radial-gradient(at 100% 0%, hsla(225,39%,30%,0.05) 0, transparent 50%);
+        }
+        .glass {
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+        }
+        
+        /* Tombol & Komponen Hover */
+        .btn-premium {
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          position: relative;
+          overflow: hidden;
+        }
+        
+        /* Tombol saat Nonaktif (Disabled) */
+        .btn-premium:disabled {
+          cursor: not-allowed !important;
+          opacity: 0.3;
+          filter: grayscale(1);
+        }
+
+        /* Hover Khusus saat Disabled sebagai tanda "Tidak Berfungsi" */
+        .btn-premium:disabled:hover {
+          transform: none !important;
+          box-shadow: none !important;
+          border-color: rgba(239, 68, 68, 0.3) !important; /* Efek kemerahan tipis */
+          background-color: rgba(239, 68, 68, 0.05) !important;
+        }
+
+        /* Hover saat Aktif */
+        .btn-premium:hover:not(:disabled) {
+          transform: translateY(-5px) scale(1.03);
+          box-shadow: 0 25px 30px -10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-premium:active:not(:disabled) {
+          transform: translateY(0) scale(0.97);
+        }
+
+        .glow-indigo:hover:not(:disabled) { box-shadow: 0 0 30px 5px rgba(99, 102, 241, 0.5); }
+        .glow-emerald:hover:not(:disabled) { box-shadow: 0 0 30px 5px rgba(16, 185, 129, 0.5); }
+        .glow-rose:hover:not(:disabled) { box-shadow: 0 0 30px 5px rgba(244, 63, 94, 0.5); }
+
+        /* Custom Scrollbar */
+        .custom-scrollbar::-webkit-scrollbar { width: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #e2e8f0;
+          border-radius: 20px;
+          border: 3px solid transparent;
+          background-clip: content-box;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb { background: #1e293b; }
+
+        /* Result Cards Animation */
+        .reveal-card {
+          animation: reveal 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+        @keyframes reveal {
+          from { opacity: 0; transform: translateY(30px) scale(0.95); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 bg-mesh selection:bg-indigo-600 selection:text-white">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

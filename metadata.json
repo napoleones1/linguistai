@@ -1,0 +1,5 @@
+{
+  "name": "LinguistAI - Advanced Word Analytics",
+  "description": "A sophisticated text analysis tool that provides real-time word counting, readability scores, and AI-powered linguistic insights using Gemini 3.",
+  "requestFramePermissions": []
+}
