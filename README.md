@@ -58,6 +58,7 @@ Seluruh fitur LinguistAI ditenagai oleh **Gemini AI** sebagai otak kecerdasan bu
 🟡 Gemini API
 🔵 AI Studio
 ⚫ Vite
+```
 
 ## ⚡ Run Locally
 
